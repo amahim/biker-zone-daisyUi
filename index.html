@@ -9,6 +9,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-color':'#E76F51',
+              }
+            }
+          }
+        }
+      </script>
     <style>
         .poppins{
             font-family: "Poppins";
@@ -16,8 +28,49 @@
     </style>
 </head>
 <body class="poppins">
-   <header>
-    
+   <header class="bg-[#264653]">
+    <!-- navbar -->
+    <div class="navbar  md:w-4/5 md:mx-auto">
+        <div class="flex-1">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                color="white">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content text-base rounded-box z-[1] mt-3 w-52 p-2 shadow text-white">
+              <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class="text-xl text-white">Biker Zone</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal text-base px-1 text-white">
+            <li><a>Home</a></li>
+              <li><a>Shop</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <a class="btn bg-btn-color border-0 text-white">Login</a>
+        </div>
+    </div>
    </header>
    <main>
 
